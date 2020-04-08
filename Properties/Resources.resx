@@ -190,6 +190,9 @@
   <data name="Constanta4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Constanta4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="defaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\defaultImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Iasi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Iasi1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -228,9 +231,6 @@
   </data>
   <data name="Predeal3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Predeal3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sibiu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sibiu1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

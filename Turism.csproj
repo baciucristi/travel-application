@@ -165,7 +165,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rio.png" />
     <None Include="Resources\Brasov6.jpg" />
     <None Include="Resources\Brasov7.jpg" />
     <None Include="Resources\Cluj1.jpg" />
@@ -215,6 +214,7 @@
     <None Include="Resources\Brasov3.jpg" />
     <None Include="Resources\Brasov4.jpg" />
     <None Include="Resources\Brasov5.jpg" />
+    <None Include="Resources\defaultImage.jpg" />
     <Content Include="Turism.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -16,7 +16,7 @@ namespace Turism
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new excursieForm());
+            Application.Run(new loginForm());
         }
     }
 }

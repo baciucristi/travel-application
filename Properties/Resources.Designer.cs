@@ -303,6 +303,16 @@ namespace Turism.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap defaultImage {
+            get {
+                object obj = ResourceManager.GetObject("defaultImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Iasi1 {
             get {
                 object obj = ResourceManager.GetObject("Iasi1", resourceCulture);
@@ -426,16 +436,6 @@ namespace Turism.Properties {
         internal static System.Drawing.Bitmap Predeal3 {
             get {
                 object obj = ResourceManager.GetObject("Predeal3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap rio {
-            get {
-                object obj = ResourceManager.GetObject("rio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

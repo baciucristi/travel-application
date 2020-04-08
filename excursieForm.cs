@@ -18,6 +18,7 @@ namespace Turism
         public excursieForm()
         {
             InitializeComponent();
+            pictureBox1.Image = (Bitmap)Properties.Resources.defaultImage;
         }
 
         // Conexiunea cu baza de date 
@@ -90,7 +91,7 @@ namespace Turism
             query3 += "JOIN Calendar c ON c.CalendarDate BETWEEN Planificari.DataStart AND Planificari.DataStop ";
             query3 += "WHERE DataStart BETWEEN '" + date1 + "' AND '" + date2 + "'" + " ORDER BY Nume, CalendarDate;";
             SqlDataAdapter sda3 = new SqlDataAdapter(query3, sqlcon);
-            //DataTable dt3 = new DataTable();
+            dt3.Clear();
             sda3.Fill(dt3);
             dataGridView3.DataSource = dt3;
         }
@@ -158,71 +159,80 @@ namespace Turism
             // Lenght of dt3
             int n = dt3.Rows.Count;
 
-            // progressBar1 initializer
-            progressBar1.Maximum = n - 1;
-            progressBar1.Step = 1;
-            progressBar1.Value = 0;
-
-            // Declaration of list localitateImagini (List with CaleFisier)
-            List<string> localitateImagini = new List<string>();
-            localitateImagini.Add(dt4.Rows[0]["CaleFisier"].ToString());
-            int m = 0;
-           
-            for (int i = 0; i < n; i++)
+            // Check if DataTable contain rows
+            if (n == 0)
             {
-                // label3
-                label3.Text = dt3.Rows[i]["Nume"].ToString();
-                label3.Invalidate();
-                label3.Update();
+                MessageBox.Show("Selectați data excursiei!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } else
+            {
+                // progressBar1 initializer
+                progressBar1.Maximum = n - 1;
+                progressBar1.Step = 1;
+                progressBar1.Value = 0;
 
-                // label4
-                var date = Convert.ToDateTime(dt3.Rows[i]["CalendarDate"]);
-                label4.Text = date.ToString("dd-MM-yyyy");
-                label4.Invalidate();
-                label4.Update();
+                // Declaration of list localitateImagini (List with CaleFisier)
+                List<string> localitateImagini = new List<string>();
+                localitateImagini.Add(dt4.Rows[0]["CaleFisier"].ToString());
+                int m = 0;
 
-                // progressBar1 
-                progressBar1.Value = i;
-
-                // String of Nume row 
-                string numeString = dt3.Rows[i]["Nume"].ToString();
-
-                // Array localitateImagini loop
-                if ((numeString.Substring(0, 2) != localitateImagini[0].Substring(0, 2)))
+                for (int i = 0; i < n; i++)
                 {
-                    m = 0;
-                    localitateImagini.Clear();
-                    for (int j = 0; j < dt4Lenght; j++)
+                    // label3
+                    label3.Text = dt3.Rows[i]["Nume"].ToString();
+                    label3.Invalidate();
+                    label3.Update();
+
+                    // label4
+                    var date = Convert.ToDateTime(dt3.Rows[i]["CalendarDate"]);
+                    label4.Text = date.ToString("dd-MM-yyyy");
+                    label4.Invalidate();
+                    label4.Update();
+
+                    // progressBar1 
+                    progressBar1.Increment(1);
+
+                    // String of Nume row 
+                    string numeString = dt3.Rows[i]["Nume"].ToString();
+
+                    // Array localitateImagini loop
+                    if ((numeString.Substring(0, 2) != localitateImagini[0].Substring(0, 2)))
                     {
-                        string CaleString = dt4.Rows[j]["CaleFisier"].ToString();
-                        if (numeString.Substring(0, 2) == CaleString.Substring(0, 2))
+                        m = 0;
+                        localitateImagini.Clear();
+                        for (int j = 0; j < dt4Lenght; j++)
                         {
-                            localitateImagini.Add(CaleString);
+                            string CaleString = dt4.Rows[j]["CaleFisier"].ToString();
+                            if (numeString.Substring(0, 2) == CaleString.Substring(0, 2))
+                            {
+                                localitateImagini.Add(CaleString);
+                            }
                         }
                     }
-                }
 
-                // Check if variable m is the end of the list localitateImagini
-                if (m == localitateImagini.Count())
-                {
-                    m = 0;
-                    pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(localitateImagini[m]);
-                    pictureBox1.Invalidate();
-                    pictureBox1.Update();
-                    // MessageBox.Show(localitateImagini[m]);
-                    m++;
-                }
-                else
-                {
-                    pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(localitateImagini[m]);
-                    pictureBox1.Invalidate();
-                    pictureBox1.Update();
-                    m++;
-                }
+                    // Check if variable m is the end of the list localitateImagini
+                    if (m == localitateImagini.Count())
+                    {
+                        m = 0;
+                        pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(localitateImagini[m]);
+                        pictureBox1.Invalidate();
+                        pictureBox1.Update();
+                        // MessageBox.Show(localitateImagini[m]);
+                        m++;
+                    }
+                    else
+                    {
+                        pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(localitateImagini[m]);
+                        pictureBox1.Invalidate();
+                        pictureBox1.Update();
+                        m++;
+                    }
 
-                // Timer
-                Thread.Sleep(1000);
+                    // Timer
+                    Thread.Sleep(1000);
+                }
+                MessageBox.Show("Slideshow finalizat!", "Finalizare", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+           
         }
     }
 }
