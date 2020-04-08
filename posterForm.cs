@@ -15,7 +15,7 @@ namespace Turism
 {
     public partial class posterForm : Form
     {
-        // Conexiunea cu baza de date 
+        // Database connection
         SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală nr. 1\Turism\Turism.mdf;Integrated Security=True");
 
         public posterForm()
@@ -69,7 +69,7 @@ namespace Turism
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Afisare imagine
+            // Show image
             String selectedValue = comboBox2.Text;
             pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(selectedValue);
         }
@@ -88,13 +88,13 @@ namespace Turism
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             String selectedItem = listBox1.GetItemText(listBox1.SelectedItem);
-            // Afisare imagine
+            // Show image
             pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(selectedItem);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Salvare imagine
+            // Save image
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "PNG format|*.png";
             if (saveFileDialog.ShowDialog() == DialogResult.OK)

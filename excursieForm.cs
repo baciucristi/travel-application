@@ -68,7 +68,7 @@ namespace Turism
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void fillDataGrid()
         {
             // dataGridView2
             date1 = dateTimePicker1.Value.ToString("yyyy-MM-dd");
@@ -95,9 +95,53 @@ namespace Turism
             dataGridView3.DataSource = dt3;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fillDataGrid();
+        }
+
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_KeyDown(object sender, KeyEventArgs e)
+        {
+        }
+
+        private void excursieForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                fillDataGrid();
+                e.Handled = e.SuppressKeyPress = true;
+            }
+        }
+
+        private void dateTimePicker1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                fillDataGrid();
+                e.Handled = e.SuppressKeyPress = true;
+            }
+        }
+
+        private void dateTimePicker2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                fillDataGrid();
+                e.Handled = e.SuppressKeyPress = true;
+            }
+        }
+
+        private void tabControl1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                fillDataGrid();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -142,6 +186,7 @@ namespace Turism
                 // String of Nume row 
                 string numeString = dt3.Rows[i]["Nume"].ToString();
 
+                // Array localitateImagini loop
                 if ((numeString.Substring(0, 2) != localitateImagini[0].Substring(0, 2)))
                 {
                     m = 0;
@@ -156,7 +201,7 @@ namespace Turism
                     }
                 }
 
-                // Check if m is the end of the list localitateImagini
+                // Check if variable m is the end of the list localitateImagini
                 if (m == localitateImagini.Count())
                 {
                     m = 0;

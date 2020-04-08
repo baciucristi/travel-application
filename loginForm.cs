@@ -39,10 +39,6 @@ namespace Turism
                 if (result == DialogResult.Yes)
                     Application.Exit();
             }
-            if (e.KeyCode == Keys.Enter)
-            {
-                //pictureBox1.Click(pictureBox1, EventArgs.Empty);
-            }
         }
         private bool dragging = false;
         private Point dragCursorPoint;
@@ -77,19 +73,19 @@ namespace Turism
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            // Punem intr-o variabila datele din textbox
+            // Extract data from TextBox
             string username = alphaBlendTextBox4.Text;
             string password = alphaBlendTextBox5.Text;
             
-            // Validarea datelor 
+            // Validation of data
             if (username == "" || password == "")
             {
                 MessageBox.Show("Nu puteti lăsa câmpuri goale!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
             } else {
-                // Conexiunea cu baza de date 
+                // Database connection
                 SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală nr. 1\Turism\Turism.mdf;Integrated Security=True");
 
-                // Sistemul de login
+                // Login System
                 string query = "SELECT * FROM Users WHERE Username = '" + username.Trim() + "'AND Password = '" + password + "'";
                 SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
                 DataTable dt = new DataTable();

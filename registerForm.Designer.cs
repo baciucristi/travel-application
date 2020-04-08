@@ -104,11 +104,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("SF Pro Display", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(138, 145);
+            this.label1.Location = new System.Drawing.Point(140, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 34);
+            this.label1.Size = new System.Drawing.Size(119, 38);
             this.label1.TabIndex = 15;
             this.label1.Text = "Register";
             // 
@@ -117,12 +117,12 @@
             this.alphaBlendTextBox4.BackAlpha = 0;
             this.alphaBlendTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.alphaBlendTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.alphaBlendTextBox4.Font = new System.Drawing.Font("SF Pro Display", 12F);
+            this.alphaBlendTextBox4.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.alphaBlendTextBox4.ForeColor = System.Drawing.Color.White;
             this.alphaBlendTextBox4.Location = new System.Drawing.Point(75, 359);
             this.alphaBlendTextBox4.Name = "alphaBlendTextBox4";
             this.alphaBlendTextBox4.PasswordChar = '*';
-            this.alphaBlendTextBox4.Size = new System.Drawing.Size(133, 24);
+            this.alphaBlendTextBox4.Size = new System.Drawing.Size(133, 27);
             this.alphaBlendTextBox4.TabIndex = 14;
             // 
             // pictureBox5
@@ -148,12 +148,12 @@
             this.alphaBlendTextBox3.BackAlpha = 0;
             this.alphaBlendTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.alphaBlendTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.alphaBlendTextBox3.Font = new System.Drawing.Font("SF Pro Display", 12F);
+            this.alphaBlendTextBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.alphaBlendTextBox3.ForeColor = System.Drawing.Color.White;
             this.alphaBlendTextBox3.Location = new System.Drawing.Point(75, 296);
             this.alphaBlendTextBox3.Name = "alphaBlendTextBox3";
             this.alphaBlendTextBox3.PasswordChar = '*';
-            this.alphaBlendTextBox3.Size = new System.Drawing.Size(133, 24);
+            this.alphaBlendTextBox3.Size = new System.Drawing.Size(133, 27);
             this.alphaBlendTextBox3.TabIndex = 11;
             // 
             // alphaBlendTextBox2
@@ -161,11 +161,11 @@
             this.alphaBlendTextBox2.BackAlpha = 0;
             this.alphaBlendTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.alphaBlendTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.alphaBlendTextBox2.Font = new System.Drawing.Font("SF Pro Display", 12F);
+            this.alphaBlendTextBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.alphaBlendTextBox2.ForeColor = System.Drawing.Color.White;
             this.alphaBlendTextBox2.Location = new System.Drawing.Point(75, 235);
             this.alphaBlendTextBox2.Name = "alphaBlendTextBox2";
-            this.alphaBlendTextBox2.Size = new System.Drawing.Size(133, 24);
+            this.alphaBlendTextBox2.Size = new System.Drawing.Size(133, 27);
             this.alphaBlendTextBox2.TabIndex = 10;
             // 
             // pictureBox4

@@ -43,21 +43,21 @@ namespace Turism
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            // Punem intr-o variabila datele din textbox
+            // Extract data from TextBox
             string username = alphaBlendTextBox2.Text;
             string password = alphaBlendTextBox3.Text;
             string password2 = alphaBlendTextBox4.Text;
 
-            // Conexiunea cu baza de date 
+            // Database connection
             SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală nr. 1\Turism\Turism.mdf;Integrated Security=True");
             sqlcon.Open();
 
-            // Validarea datelor 
+            // Data validation
             if (!string.IsNullOrEmpty(username) || !string.IsNullOrEmpty(password) || !string.IsNullOrEmpty(password2))
             {
                 if (password == password2)
                 {
-                    // Verificarea in baza de date un username existent
+                    // Check in database if exists identical username
                     string query = "SELECT Username FROM Users WHERE Username = '" + username.Trim() + "'";
                     SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
                     DataTable checkDuplicates = new DataTable();
