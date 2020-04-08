@@ -167,6 +167,7 @@ namespace Turism
             List<string> localitateImagini = new List<string>();
             localitateImagini.Add(dt4.Rows[0]["CaleFisier"].ToString());
             int m = 0;
+           
             for (int i = 0; i < n; i++)
             {
                 // label3
@@ -205,18 +206,19 @@ namespace Turism
                 if (m == localitateImagini.Count())
                 {
                     m = 0;
-                    MessageBox.Show(localitateImagini[m]);
+                    pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(localitateImagini[m]);
+                    pictureBox1.Invalidate();
+                    pictureBox1.Update();
+                    // MessageBox.Show(localitateImagini[m]);
                     m++;
                 }
                 else
                 {
-                    MessageBox.Show(localitateImagini[m]);
+                    pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(localitateImagini[m]);
+                    pictureBox1.Invalidate();
+                    pictureBox1.Update();
                     m++;
                 }
-
-
-                
-                // pictureBox1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(CaleString);
 
                 // Timer
                 Thread.Sleep(1000);

@@ -47,7 +47,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(32, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 23);
+            this.label1.Size = new System.Drawing.Size(93, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Localitate";
             // 
@@ -58,7 +58,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(36, 59);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(193, 26);
+            this.comboBox1.Size = new System.Drawing.Size(193, 28);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -69,7 +69,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(37, 119);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(193, 26);
+            this.comboBox2.Size = new System.Drawing.Size(193, 28);
             this.comboBox2.TabIndex = 3;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             this.comboBox2.Click += new System.EventHandler(this.comboBox2_Click);
@@ -102,7 +102,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(32, 93);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 23);
+            this.label3.Size = new System.Drawing.Size(80, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Imagine";
             // 
@@ -110,10 +110,10 @@
             // 
             this.listBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
+            this.listBox1.ItemHeight = 23;
             this.listBox1.Location = new System.Drawing.Point(36, 262);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(193, 84);
+            this.listBox1.Size = new System.Drawing.Size(193, 73);
             this.listBox1.TabIndex = 7;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -137,7 +137,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(33, 236);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 23);
+            this.label2.Size = new System.Drawing.Size(118, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Lista imagini";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -158,6 +158,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "posterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Generează poster";

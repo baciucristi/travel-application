@@ -165,153 +165,56 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="media\Barsana5.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Borsa1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Borsa2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Borsa3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Borsa4.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Brasov1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Brasov2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Brasov3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Brasov4.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Brasov5.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Brasov6.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Brasov7.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Cluj1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Cluj2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Cluj3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Cluj4.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Constanta1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Constanta2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Constanta3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Constanta4.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Iasi1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Iasi2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Iasi3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Iasi4.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Mangalia1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Mangalia2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Ploiesti1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Ploiesti2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Ploiesti3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Ploiesti4.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Predeal1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Predeal2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Predeal3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Sibiu1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Sibiu2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Sibiu3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Sibiu4.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Sinaia1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Sinaia2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Sinaia3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\TarguNeamt1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\TarguNeamt2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\TarguNeamt3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\VatraDornei1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\VatraDornei2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Barsana1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Barsana2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Barsana3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="media\Barsana4.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="Resources\rio.png" />
+    <None Include="Resources\Brasov6.jpg" />
+    <None Include="Resources\Brasov7.jpg" />
+    <None Include="Resources\Cluj1.jpg" />
+    <None Include="Resources\Cluj2.jpg" />
+    <None Include="Resources\Cluj3.jpg" />
+    <None Include="Resources\Cluj4.jpg" />
+    <None Include="Resources\Constanta1.jpg" />
+    <None Include="Resources\Constanta2.jpg" />
+    <None Include="Resources\Constanta3.jpg" />
+    <None Include="Resources\Constanta4.jpg" />
+    <None Include="Resources\Iasi1.jpg" />
+    <None Include="Resources\Iasi2.jpg" />
+    <None Include="Resources\Iasi3.jpg" />
+    <None Include="Resources\Iasi4.jpg" />
+    <None Include="Resources\Mangalia1.jpg" />
+    <None Include="Resources\Mangalia2.jpg" />
+    <None Include="Resources\Ploiesti1.jpg" />
+    <None Include="Resources\Ploiesti2.jpg" />
+    <None Include="Resources\Ploiesti3.jpg" />
+    <None Include="Resources\Ploiesti4.jpg" />
+    <None Include="Resources\Predeal1.jpg" />
+    <None Include="Resources\Predeal2.jpg" />
+    <None Include="Resources\Predeal3.jpg" />
+    <None Include="Resources\Sibiu1.jpg" />
+    <None Include="Resources\Sibiu2.jpg" />
+    <None Include="Resources\Sibiu3.jpg" />
+    <None Include="Resources\Sibiu4.jpg" />
+    <None Include="Resources\Sinaia1.jpg" />
+    <None Include="Resources\Sinaia2.jpg" />
+    <None Include="Resources\Sinaia3.jpg" />
+    <None Include="Resources\TarguNeamt1.jpg" />
+    <None Include="Resources\TarguNeamt2.jpg" />
+    <None Include="Resources\TarguNeamt3.jpg" />
+    <None Include="Resources\VatraDornei1.jpg" />
+    <None Include="Resources\VatraDornei2.jpg" />
+    <None Include="Resources\Barsana1.jpg" />
+    <None Include="Resources\Barsana2.jpg" />
+    <None Include="Resources\Barsana3.jpg" />
+    <None Include="Resources\Barsana4.jpg" />
+    <None Include="Resources\Barsana5.jpg" />
+    <None Include="Resources\Borsa1.jpg" />
+    <None Include="Resources\Borsa2.jpg" />
+    <None Include="Resources\Borsa3.jpg" />
+    <None Include="Resources\Borsa4.jpg" />
+    <None Include="Resources\Brasov1.jpg" />
+    <None Include="Resources\Brasov2.jpg" />
+    <None Include="Resources\Brasov3.jpg" />
+    <None Include="Resources\Brasov4.jpg" />
+    <None Include="Resources\Brasov5.jpg" />
     <Content Include="Turism.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

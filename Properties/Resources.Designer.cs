@@ -433,6 +433,16 @@ namespace Turism.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rio {
+            get {
+                object obj = ResourceManager.GetObject("rio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sibiu1 {
             get {
                 object obj = ResourceManager.GetObject("Sibiu1", resourceCulture);
