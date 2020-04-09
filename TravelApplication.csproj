@@ -222,6 +222,8 @@
     <None Include="Resources\Brasov4.jpg" />
     <None Include="Resources\Brasov5.jpg" />
     <None Include="Resources\defaultImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="TravelApplication.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -230,6 +232,5 @@
       <DependentUpon>TravelApplication.mdf</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
