@@ -63,7 +63,8 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>suitcase.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AlphaBlendTextBox">
@@ -221,7 +222,6 @@
     <None Include="Resources\Brasov4.jpg" />
     <None Include="Resources\Brasov5.jpg" />
     <None Include="Resources\defaultImage.jpg" />
-    <Content Include="suitcase.ico" />
     <Content Include="TravelApplication.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
