@@ -224,6 +224,9 @@
     <None Include="Resources\defaultImage.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="TravelApplication.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
