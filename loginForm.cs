@@ -28,6 +28,40 @@ namespace TravelApplication
 
         }
 
+        private void login()
+        {
+            // Extract data from TextBox
+            string username = alphaBlendTextBox4.Text;
+            string password = alphaBlendTextBox5.Text;
+
+            // Validation of data
+            if (username == "" || password == "")
+            {
+                MessageBox.Show("Nu puteti lăsa câmpuri goale!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                // Database connection
+                SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală nr. 1\TravelApplication\TravelApplication.mdf;Integrated Security=True");
+
+                // Login System
+                string query = "SELECT * FROM Users WHERE Username = '" + username.Trim() + "'AND Password = '" + password + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                if (dt.Rows.Count == 1)
+                {
+                    this.Hide();
+                    menuForm f5 = new menuForm();
+                    f5.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Datele introduse sunt incorecte!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
         private void loginForm_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
@@ -38,6 +72,10 @@ namespace TravelApplication
 
                 if (result == DialogResult.Yes)
                     Application.Exit();
+            }
+            if (e.KeyCode == Keys.Enter)
+            {
+                login();
             }
         }
         private bool dragging = false;
@@ -73,33 +111,7 @@ namespace TravelApplication
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            // Extract data from TextBox
-            string username = alphaBlendTextBox4.Text;
-            string password = alphaBlendTextBox5.Text;
-            
-            // Validation of data
-            if (username == "" || password == "")
-            {
-                MessageBox.Show("Nu puteti lăsa câmpuri goale!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } else {
-                // Database connection
-                SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală nr. 1\TravelApplication\TravelApplication.mdf;Integrated Security=True");
-
-                // Login System
-                string query = "SELECT * FROM Users WHERE Username = '" + username.Trim() + "'AND Password = '" + password + "'";
-                SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                if (dt.Rows.Count == 1)
-                {
-                    this.Hide();
-                    menuForm f5 = new menuForm();
-                    f5.Show();
-                } else
-                {
-                    MessageBox.Show("Datele introduse sunt incorecte!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+            login();
         }
 
         private void loginForm_MouseClick(object sender, MouseEventArgs e)

@@ -41,7 +41,7 @@ namespace TravelApplication
             dragging = false;
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void register()
         {
             // Extract data from TextBox
             string username = alphaBlendTextBox2.Text;
@@ -65,7 +65,8 @@ namespace TravelApplication
                     if (checkDuplicates.Rows.Count == 1)
                     {
                         MessageBox.Show("Username existent!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    } else
+                    }
+                    else
                     {
                         string queryInsert = "INSERT INTO Users (Username, Password) VALUES (@Username, @Password)";
                         SqlCommand command = new SqlCommand(queryInsert, sqlcon);
@@ -74,14 +75,21 @@ namespace TravelApplication
                         command.ExecuteNonQuery();
                         MessageBox.Show("Cont înregistrat cu succes!", "Autentificare reușită!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                } else
+                }
+                else
                 {
                     MessageBox.Show("Parolele nu coincid!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            } else
+            }
+            else
             {
                 MessageBox.Show("Nu puteți lăsa câmpuri goale!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            register();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -106,6 +114,11 @@ namespace TravelApplication
 
                 if (result == DialogResult.Yes)
                     Application.Exit();
+            }
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                register();
             }
         }
     }
