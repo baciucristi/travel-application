@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 using System.Threading;
 using System.Resources;
 
-namespace Turism
+namespace TravelApplication
 {
     public partial class excursieForm : Form
     {
@@ -22,7 +22,7 @@ namespace Turism
         }
 
         // Conexiunea cu baza de date 
-        SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală nr. 1\Turism\Turism.mdf;Integrated Security=True");
+        SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală nr. 1\TravelApplication\TravelApplication.mdf;Integrated Security=True");
 
         // Declaration of date1, date2;
         string date1, date2;

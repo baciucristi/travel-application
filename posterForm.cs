@@ -11,12 +11,12 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Drawing.Imaging;
 
-namespace Turism
+namespace TravelApplication
 {
     public partial class posterForm : Form
     {
         // Database connection
-        SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală nr. 1\Turism\Turism.mdf;Integrated Security=True");
+        SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală nr. 1\TravelApplication\TravelApplication.mdf;Integrated Security=True");
 
         public posterForm()
         {

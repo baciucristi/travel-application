@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace Turism
+namespace TravelApplication
 {
     public partial class registerForm : Form
     {
@@ -49,7 +49,7 @@ namespace Turism
             string password2 = alphaBlendTextBox4.Text;
 
             // Database connection
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală nr. 1\Turism\Turism.mdf;Integrated Security=True");
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală nr. 1\TravelApplication\TravelApplication.mdf;Integrated Security=True");
             sqlcon.Open();
 
             // Data validation

@@ -1,4 +1,4 @@
-﻿namespace Turism
+﻿namespace TravelApplication
 {
     partial class loginForm
     {
