@@ -1,6 +1,6 @@
 <h1 align="center" style="border-bottom: none;">🌎 Travel Desktop App</h1>
 
-<h3 align="center">A desktop application to check trips and itinerariees.</h3>
+<h3 align="center">A desktop application to check trips and itineraries.</h3>
 
 Application language: Romanian
 
