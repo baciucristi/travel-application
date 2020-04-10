@@ -1,10 +1,10 @@
-﻿# Travel Desktop App
+<h1 align="center" style="border-bottom: none;">🌎 Travel Desktop App</h1>
 
-A TravelApplication to check trips and itinerariees using C# and Windows Forms.
+<h3 align="center">A TravelApplication to check trips and itinerariees using C# and Windows Forms.</h3>
 
-Application language: Romanian 🌎
+Application language: Romanian
 
-College project 🎓 2020
+College project © 2020
 
 ![travel-app](https://user-images.githubusercontent.com/49842769/78923103-5ce3a400-7aa0-11ea-88ef-bf1950f24bfe.jpg)
 
