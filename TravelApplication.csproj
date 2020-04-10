@@ -68,7 +68,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AlphaBlendTextBox">
-      <HintPath>C:\Users\icris\Downloads\AlphaBlendTextBox.dll</HintPath>
+      <HintPath>dll\AlphaBlendTextBox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>dll\Bunifu_UI_v1.52.dll</HintPath>
