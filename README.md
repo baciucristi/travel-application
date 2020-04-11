@@ -1,10 +1,10 @@
-<h1 align="center" style="border-bottom: none;">🌎 Travel Desktop App</h1>
+# Travel Desktop App 🌎
 
-<h3 align="center">A desktop application to check trips and itineraries.</h3>
+### A desktop application to check trips and itineraries.
 
-Application language: Romanian
+Application language: **Romanian**
 
-College project © 2020
+*College project © **2020***
 
 ![travel-app](https://user-images.githubusercontent.com/49842769/78923103-5ce3a400-7aa0-11ea-88ef-bf1950f24bfe.jpg)
 
