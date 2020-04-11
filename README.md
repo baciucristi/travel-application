@@ -1,6 +1,6 @@
 # Travel Desktop App 🌎
 
-### A desktop application to check trips and itineraries.
+**A desktop application to check trips and itineraries.**
 
 Application language: **Romanian**
 
