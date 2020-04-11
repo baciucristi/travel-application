@@ -4,7 +4,7 @@
 
 Application language: **Romanian**
 
-*College project © **2020***
+College project @ 2020
 
 ![travel-app](https://user-images.githubusercontent.com/49842769/78923103-5ce3a400-7aa0-11ea-88ef-bf1950f24bfe.jpg)
 
@@ -25,3 +25,6 @@ Application language: **Romanian**
 ### Download
 
 If you just want to install the application, please download the [TravelAppSetup.msi](https://github.com/baciucristi/travel-application/releases/latest) file.
+
+### License
+Travel Application is licensed under the [MIT](https://github.com/baciucristian/travel-application/blob/master/LICENSE) license.
