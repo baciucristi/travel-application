@@ -22,7 +22,7 @@ namespace TravelApplication
         }
 
         // Conexiunea cu baza de date 
-        SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală nr. 1\travel-application\TravelApplication.mdf;Integrated Security=True");
+        SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\School\Anul III\C#\Lucrare individuală\travel-application\TravelApplication.mdf;Integrated Security=True");
 
         // Declaration of date1, date2;
         string date1, date2;
